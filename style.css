@@ -11,12 +11,12 @@ body{
 .main-box{
     box-sizing: border-box;
     display: flex;
-    height: 400px;
-    width: 650px;
+    height: 450px;
+    width: 700px;
     background-color: ;
-    border: 1px solid grey;
     border-radius: 20px;
-        font-family:'Hanken Grotesk', sans-serif;
+    font-family:'Hanken Grotesk', sans-serif;
+    box-shadow:  80px 20px 800px -170px black;
 
 }
 .left-box{
@@ -30,12 +30,13 @@ body{
     background-color: hsl(241, 81%, 54%);
     border-radius: 20px;
     padding: 12px;
+    gap: 10px;
 }
-h3{
+
+.result{
     color: hsl(220, 4%, 86%);
 }
 .seven-six{
-    font-family:'Hanken Grotesk', sans-serif;
     color: white;
     margin: 0;
     font-weight: 800;
@@ -51,13 +52,65 @@ h3{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
     background-color: hsla(256, 72%, 46%, 1);
     border-radius: 50%;
-    background: radial-gradient(to top, hsla(241, 72%, 46%, 0) , 
-    hsla(256, 72%, 46%, 1) 20%);
-    box-shadow: inset 10px 10px 10px rgba(77px , 77px, 77px, 0.5
+    box-shadow: inset 0px 45px 40px -20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 0.4) 70%);
+}
+p{
+    font-size: 15px;
+}
+h2{
+    color: white;
+}
+.left-text{
+    color: hsl(220, 4%, 86%);  
+    margin: 0;
+}
+.right-box{
     
-    );
+    width: 51%;
+    padding: 10.5px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+.boxes-container{
+    margin-top: 33px;
+}
+.right-content-boxes{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    height: 50px;
+    width: inherit;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+.first-box{
+    background-color: hsl(0, 100%, 95%);
+}
+.second-box{
+    background-color: hsl(39, 100%, 95%);
+}
+.third-box{
+    background-color: hsl(166, 100%, 95%);
+}
+.forth-box{
+    background-color: hsl(234, 85%, 95%);
+}
+
+button{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 30px;  
+    background-color: hsl(224, 30%, 27%); 
+    color: white;
+    border: 0;
+    font-weight: 500;
 }
