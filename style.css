@@ -116,7 +116,7 @@ button{
     border: 0;
     font-weight: 500;
 }
-@media (max-width:400px) {
+@media (max-width:376px) {
     body{
         margin: 0;
         padding: 0;
