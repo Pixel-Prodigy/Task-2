@@ -9,11 +9,7 @@ body{
     align-items: center;
 }
 .main-box{
-    box-sizing: border-box;
     display: flex;
-    height: 450px;
-    width: 700px;
-    background-color: ;
     border-radius: 20px;
     font-family:'Hanken Grotesk', sans-serif;
     box-shadow:  80px 20px 800px -170px black;
@@ -22,15 +18,19 @@ body{
 .left-box{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
     margin: 0;
-    height: 100%;
-    width: 49%;
+    height: 450px;
+    width: 310px;
     background-color: hsl(241, 81%, 54%);
     border-radius: 20px;
     padding: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
     gap: 10px;
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 65%) 90%);
 }
 
 .result{
@@ -69,13 +69,15 @@ h2{
     color: hsl(220, 4%, 86%);  
     margin: 0;
 }
+
 .right-box{
     
-    width: 51%;
+    width: 260px;
     padding: 10.5px;
     padding-left: 35px;
     padding-right: 35px;
-
+    box-shadow: 30px 20px 120px -100px black;
+    border-radius: 20px;
 }
 .boxes-container{
     margin-top: 33px;
@@ -113,4 +115,42 @@ button{
     color: white;
     border: 0;
     font-weight: 500;
+}
+@media (max-width:400px) {
+    body{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .main-box{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .left-box{
+        box-sizing: content-box;
+        display: flex;
+        width: 275px;
+        height: 330px;
+        gap: 0px;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 20px;
+
+        
+    }
+    .circle{
+        height: 140px;
+        width: 150px;
+    }
+    .right-box{
+        box-shadow: none;
+        width: 85%;
+    }
+   
 }
